@@ -126,7 +126,8 @@ gulp.task('build', function () {
     debug: true,
     standalone: 'd3-charts',
   })
-    // .pipe($.uglify())
+    .pipe($.rename({ basename: 'd3-charts' }))
+    .pipe($.uglify())
     .pipe(dest())
   ;
 });
@@ -142,8 +143,8 @@ gulp.task('check', function () {
   ;
 });
 
-gulp.task('clean', function () {
-  require('fs').unlinkSync(DIST_DIR +'/d3-charts.js');
+gulp.task('clean', function (done) {
+  require('rimraf')(DIST_DIR, done);
 });
 
 gulp.task('test', function () {

@@ -15,6 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "compiled-accessors": "^0.1.0",
+    "d3": "^3.4.10",
     "lodash.defaults": "^2.4.1"
   },
   "devDependencies": {
@@ -25,13 +26,12 @@
     "gulp-jshint": "^1.7.1",
     "gulp-jsvalidate": "^0.2.0",
     "gulp-load-plugins": "^0.5.3",
+    "gulp-rename": "^1.2.0",
     "gulp-uglify": "^0.3.1",
     "jshint-stylish": "^0.4.0",
     "mocha": "^1.20.1",
+    "rimraf": "^2.2.8",
     "vinyl": "^0.2.3"
-  },
-  "peerDependencies": {
-    "d3": "^3.4.10"
   },
   "files": [
     "index.js",
