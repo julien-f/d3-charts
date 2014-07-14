@@ -1,8 +1,11 @@
 {
   "name": "d3-charts",
   "version": "0.0.0",
-  "description": "",
-  "keywords": [],
+  "description": "Reusable D3.js charts",
+  "keywords": [
+    "D3.js",
+    "charts"
+  ],
   "scripts": {
     "test": "gulp test"
   },
@@ -36,5 +39,8 @@
   "files": [
     "index.js",
     "src"
-  ]
+  ],
+  "directories": {
+    "example": "examples"
+  }
 }
